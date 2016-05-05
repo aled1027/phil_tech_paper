@@ -3,6 +3,8 @@
 \usepackage{csquotes}
 \usepackage{color}
 \usepackage{amsfonts}
+\usepackage{setspace}
+
 
 
 \input{macros}
@@ -13,6 +15,9 @@
 \pagestyle{myheadings}
 
 \begin{document}
+\doublespacing
+
+
 \maketitle
 
 \section{Introduction}
@@ -48,6 +53,18 @@ I would imagine that this would be allowed by freedom of speech - the freedom to
 
 The final fact to be aware of is that by requiring encryption schemes that use a master-key, the governemnt would greatly weaken the cyber-security infrastructure.
 As we have seen, it is not too difficult for hackers, either private or state-sponsored, to break into databases, and in theory, steal the master-key, giving them access to all \textit{private} messages encrypted using that master-key.
+
+\section{Parallel Situations}
+To think about whether encryption is a fundamental right, it helps to think about parallel situations to communicated via encryption.
+Encryption, as I will be thinking about it, is a method that allows two or more parties to send messages over the internet without an eavesdropper from reading, or learning any information about, the contents of the messages.
+Encryption is also used to obfuscate data on a laptop or iPhone, such as in the recent case between the FBI and Apple, but I believe that it will simplify our reasoning if we leave that situation to another day.
+
+One way to think about encryption is verbally talking to another party in a private room, in which case we ask the question: if we are alone in a private room with another party, do we have the right to communicate privately - that is, do we have a right to \textit{not} be eavesdropped on?
+The legal answer to this question turns out, somewhat unsuprisingly, to be complex and situatational.
+The law varies based on the state, but if you are talking in a business setting and the organization hosting the conversation makes a reasonable effort to inform the parties that they are being audio-visually recorded, then it is legal.
+% https://www.quora.com/Is-it-legal-to-bug-a-workplace-conference-room-in-the-US
+Let us ignore the case of a business, and consider a private residence: it is my lay understanding that homes can only be audio-visually surveilled if the law-enforcement body acquires a warrant, and it is illegal for a private-party to audio-visually surveil a private residence.
+
 
 %\bibliographystyle{apalike}
 %\bibliography{paper}
