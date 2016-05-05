@@ -1,0 +1,39 @@
+
+
+
+# thesis question
+- Is encryption a fundamental right?
+- Do we have a right to anonymity?
+
+## Facts and Observations
+- Do we expect privacy?
+    - we email like we expect privacy
+    - tantamount to before we were worried about FBI listening to conversation via secret mic
+- Encryption feels like resistance
+- NEST tropes
+- surveillence state
+- 
+
+- Infrastructure difference
+    - we do not own the physical network underlying network - we pay someone for the service of using it
+    - does that make a difference? do we have a right to privacy on it?
+    
+- why are we having this argument in the first place?
+- hitler famously used encryption
+- guess: 
+    - enc is accessible to all of us
+    - we know that NSA or others are reading our stuff
+- this leads to Enc being resistance
+- why is seeking privacy resistance?
+
+- United Nations Human Right Council
+    - 
+
+## Outline
+
+
+
+
+
+
+
