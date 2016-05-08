@@ -17,6 +17,7 @@
 - Infrastructure difference
     - we do not own the physical network underlying network - we pay someone for the service of using it
     - does that make a difference? do we have a right to privacy on it?
+    - post office
     
 - why are we having this argument in the first place?
 - hitler famously used encryption
