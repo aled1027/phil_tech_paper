@@ -108,71 +108,57 @@ Another way to think about the USPS reading letters is to think about the questi
 Suppose that the USPS is an organization  that performs a service $S$.
 Service $S$ takes as input $x$, outputs $S(x)$.
 In the process of performing $S$, the USPS does not need to know anything about $x$.
-In fact, I put $x$ into an envelope or letter, call this $l(x)$.
-I actually give the USPS $l(x)$ and they return $S(l(x))$.
-The question then is if the USPS does not need to open $l(x)$ (i.e., reveal $x$) in order to perform $S$, then do they have any right to do so?
+In fact, I put $x$ into an envelope or letter, call this $e(x)$.
+I actually give the USPS $e(x)$ and they return $S(e(x))$.
+The question then is if the USPS does not need to open $e(x)$ (i.e., reveal $x$) in order to perform $S$, then do they have any right to do so?
 
 In a general business setting, I expect that a business will perform what I ask of them with minimal intrusion into inputs.
-I am paying them to perform the service, and not to investigate me.
+I am paying them to perform the service, not to investigate me.
 Perhaps it is reasonable to say that the business can learn some information about $x$ during processing the service, but the amount of that they learn about $x$ should be upper bounded by some value.
 That is, they can learn some things, because it's unreasonable to hold them an absurdly high standard of respecting my privacy, but they shouldn't go out of their way to learn about my input.
 
 That being said, the case of the USPS and the internet is different because it's the government that is performing the service.
 The aim of the government is to aid the people, and this specific case, their foremost goal is deliver my letter or internet request.
-In this light, it seems unreasonable for the USPS or internet provider to open my envelope to read its contents, unless there is some other priority such as national security, which becomes a messier issue.
+In this light, it seems unreasonable for the USPS or internet provider to open my envelope to read its contents, unless there is some other priority such as national security, which makes a messier issue.
 
 \subsubsection{National Security}
 Many arguments for regulating encryption focus on the fact that strong encryption helps criminals undermine national security efforts.
 This argument is difficult to address for various reasons.
-However, I recall hearing that Snowden revealed that little to none of the NSA's privacy-invading efforts had contributed to national security.
-And that many of the privacy breaches were justified under the guise of national security, but in fact had other uses and purposes.
-To me, this debate in part boils down the efficacy.
+However, I recall hearing that Snowden revealed that little to none of the NSA's privacy-invading efforts had contributed to preventing an attack.
+Snowden also revealed that many of the privacy breaches were justified under the guise of national security, but in fact had other uses and purposes.
+To me, this debate in part boils down to the efficacy of invading privacy towards improving national security.
 There is some sweet spot where privacy and national security are optimized, but the public does not have adequate information to truly assess this problem, as we do not details about national security efforts or privacy invasion.
 
 \section{Summing it up}
 The last section, instead of providing a clear answer to question of encryption, brought up some important points that need to be addressed in order to come to satisfying answer.
 The aim of this section is to highlight those points, as they should be useful to future work.
 
-The first point is that sending messages over the internet is different from talking.
-When people communicate via the internet, the messages are publicly accessible (to some extent), since they bounce from server to server on their way to their destination.
-Talking on the internet is fundamentally different from two parties talking in a private room; rather, they are talking in a crowded room.
-Then, the only possible method by which the parties can achieve privacy is by using public-key encryption, but we must first ask the question: do people have a right to a private conversation in a crowded room? 
-In a real world, non-internet setting, I'm inclined to say no. 
-By trying to have a conversation in a crowded room, the parties would inconvenience others, for example by requiring that others steer clear of the section of the room in which the parties are conversing.
-But what if the parties do not inconvenience anyone when having their conversation?
-Encryption on the internet does not inconvenience those with whom the parties am not communicating.
-My conclusion is that there is no easy way to compare encryption to talking.
-At any point, there are differences such that we, as philosophers, lose the ethical importance of the matter when we try to draw parallels.
+In the crowded room hypothetical situation, we concluded that is was unclear, or situational, if we had a right to a private conversation, and our argument was that in order to have a private conversation, we would have to inconvenience others.
+Unfortunately, this hypothetical situation lacks parallelism to using encryption because using encryption does not inconveniene anyone. 
+That is, if I use encryption on the internet, then it has no effect on your internet experience.
+Hence, we must ask the question, if in the hypothetical crowded we hold a private conversation without inconveniencing others, can we?
+One argument arguing in the negation of the question is that it would be rude to leave others out - the others are in the room, and they can listen to our conversation if they want to.
+This argument appeals to the slogan, ``you have nothing to worry about if you have nothing to hide'', where just because I have no reason to have a private conversation, I should not be holding one.
+I am not persuaded by this argument because sometimes I talk and I just don't want a certain group of people to be privy to my convesation.
+If I were not able to prevent a group of people from listening to me, it would restrict what I would say.
+This line of thinking opens a number of questions, such as: by refusing to not eavesdrop, is that group really restricting my speech? Are they restricting my access to speech? 
+Encryption would solve the problem because they could not listen to me and I can say what I want, so do I have a right to encryption if it increases my right or acccess to speech?
+Unfortunately, I lack the time and space to delve into these problems, but they are a sample of the problems that fall out of digging to the crowded room hypothetical.
+Suffice it to say that the crowded room hypothetical is a useful method for approaching the question of encryption.
 
 The second point is really a sub-problem that needs to be addressed to resolve the encryption question.
 The sub-problem asks, ``do the institutions that run the internet have the right to read the contents of the messages they are handling?''
 In section 3.0.3 I introduced formal notation for what it means to send a message $x$ over the internet.
-When a message is sent over the internet, we put the internet into an envelope, creating $l(x)$, such that for the handlers of the internet to read the message they need to open the envelope.
+When a message is sent over the internet, we put the internet into an envelope, creating $e(x)$, such that for the handlers of the internet to read the message they need to open the envelope.
 In the real world, opening the envelope could take many forms; for example, the handlers of the internet could simply save the message after they process it; such an action is above and beyond the duty of the runners of the internet - they do not need to save the message to perform their job, and it doesn't even help them perform their job better - so we should consider such an action as not required.
-This sub-problem is can likely be addressed by appealing to business ethics: to what extent can a business investigate the input to a request from a client without violating the client's privacy?
-
-The third point is that national security is an important consideration.
-Undoubtedly, the internet and encryption could be used to organize events that we have a moral responsibility to prevent, if it is within our power.
-This question ultimatley asks how do we balance the trade-off between national security and privacy.
-Many parties from many perspectives have different beliefs on this question, and I imagine that the problem will continue to be contentious for years to come. 
-
-
-
-
-%
-%- Sending messages over the internet is different from talking.
-%    - Same room private conversation
-%    - Same public conversation
-%- Does a business or government have the right to open an envelope?
-%    - Goes back to business ethics and what is infrastructure
-%- National security
-%    - At what point do we have unequivocal right to privacy that trumps any national security argument?
+However, we should not hold internet providers to unreasonable standards.
+For example, it may be useful for the internet provider to save some data about the messages it processes so that it can improve its operations.
+This sub-problem can likely be addressed by appealing to business ethics: to what extent can a business investigate the input to a request from a client without violating the client's privacy?
 
 \section{Conclusion}
-We need to address many other problems before we can come to a good understanding and conclusion to whether we have a right to use encryption over the internet.
-The aim of this paper was to start a formal process for thinking through the question.
+We need to address many problems before we can come to a good understanding and conclusion to whether we have a right to use encryption over the internet.
+The aim of this paper was to start the process for thinking through the question.
 Another easy step forward is see how the arguments for and against encryption fall into the tropes of new and emerging science technology (NEST) ethics.
-We refer the reader to \cite{nest}, a good overview of NEST ethics and common responses.
 
 %\bibliographystyle{apalike}
 %\bibliography{paper}
