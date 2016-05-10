@@ -5,8 +5,6 @@
 \usepackage{amsfonts}
 \usepackage{setspace}
 
-
-
 \input{macros}
 
 \title{Creative Destruction in the Philosophy of Technology}
@@ -25,21 +23,20 @@ Over the last few years, namely since the Snowden revelations in 2013, issues co
 Snowden surprised many people when he provided evidence that the NSA has access to our internet activity and specifically that the NSA may read our email, a mode of communication that we commonly considered to be private.
 Due to this new information, many persons seeking privacy from the government resorted to using \textit{encrytion} to protect their privacy.
 Encryption is means of obfuscating a message - if two people use encryption, they can talk to each other without worrying that an eavesdropper might be reading their messages.
-In response to this, the phrase ``you have nothing worry about if you have nothing to hide'' became a slogan for those in support of the NSA; in effect, the slogan and idea it represents paints encryption as unpatriotic act of rebellion.
+In response to this, the phrase ``you have nothing worry about if you have nothing to hide'' became a slogan for those in support of the NSA; in effect, the slogan and idea it represents paint encryption as unpatriotic act of rebellion.
 
 Another debate has emerged over how encryption may undermine the efforts of the law-enforcement community: encryption enables criminals to communicate such that law-enforcement cannot read their messages and hence presenting a national security risk.
 Law-enforcement argues in favor of restricting the power of encryption, and in particular, requiring that all encryption used within the United States have some kind of master-key.
-The master-key, which the company providing the encrpytion would hold (e.g., Apple or Google), would allow the law-enforcement agency to decrypt encrypted messages.
+The master-key, which the company providing the encrpytion would hold (e.g., Apple or Google), would allow law-enforcement agencies to decrypt encrypted messages.
 
 The goal of this paper is to take a step back from the politicized arguments surrounding encryption and anonymity and ask a basic question: do we have a right to encryption?
 This question is difficult to answer or even approach, and as such, this paper does not answer the question, but it introduces sub-problems that need to be addressed first.
-The hope was that some formalism of the encryption may come to fruition, but unfortunately, none was produced.
-However, this paper is a good starting point for thinking about encryption, and is useful for future, rigorous work.
+This paper is a good starting point for thinking about encryption, and is useful for future, rigorous work.
 
 \section{Background}
 In order to discuss encryption from an ethical perspective, I first give background information on encryption.
-Encryption has been around for centuries; we have evidence from centuries ago that various armies use some form of encryption, and more recently and famously, Hitler used the engima machine in World War II to obfuscate messages between his troops.
-It is only recently that groups believe that encryption should be restricted; my suspicion is that the main reason for this that we all know have access to encryption, as opposed to states, and so it needs to be restricted, perhaps to support a state that uses surveillence.
+Encryption has been around for centuries; we have evidence from centuries ago that various armies used some form of encryption, and more recently and famously, Hitler used the engima machine in World War II to obfuscate messages between his troops.
+It is only recently that society questions unrestricted encryption; my suspicion is that the main reason for this that we all know have access to encryption, as opposed to only states having access, and so encryption needs to be restricted, perhaps to support a state that uses surveillence.
 
 It is interesting to me as a cryptographer that we believe we can \textit{restrict} encryption.
 Encryption is at its core a mathematical fact.
@@ -50,38 +47,42 @@ If Apple does not use an encryption scheme with a master-key, a regulatory body 
 If encryption does become regulated, I predict that some interesting black-market app will appear that performs the same essential functionality as Whatsapp.
 
 The government can feasibly regulate the market, but they cannot regulate individual practices.
-For example, it's hard to imagine the government could successfully prevent any person from using encryption schemes with certain properties, like me using an encryption scheme that I implement myself in Python and use to communicate with my friend.
-The difference between this situation and Apple in the previous paragraph is that I am not selling encrpytion; rather, I am simply doing math.
+For example, it is hard to imagine that the government could successfully prevent any person from using encryption schemes with certain properties, like me using an encryption scheme that I implement myself in Python and use to communicate with my friend.
+The difference between this situation and Apple in the previous paragraph is that I am not selling encrpytion.
 I would imagine that reguations on indivudal encryption would be disallowed by freedom of speech - the freedom to write a program - but I have been surprised by laws and court decisions before.
 
-The final fact to be aware of is that by requiring encryption schemes that use a master-key, the governemnt would greatly weaken the cyber-security infrastructure.
+By requiring encryption schemes that use a master-key, the governemnt would greatly weaken the cyber-security infrastructure.
 As we have seen, it is not too difficult for hackers, either private or state-sponsored, to break into databases, and in theory, steal the master-key, giving them access to all \textit{private} messages encrypted using that master-key.
 
 \section{Parallel Situations}
-In this section we present a variety of situations that are similar and disimilar to encryption to help us think about whether we have a right to use encrytion over the internet.
+A common place to start when thinking about the ethics of encryption is to compare encryption to more common ethical situations such as talking or sending a letter.
+The aim of this section is to introduce and discuss these situations.
+We find that the hypothetical situations are useful but are not strong parallels to the actual usage of encryption, and as such they are not conclusive.
+
 Encryption, as I will be using it, is a method that allows two or more parties to send messages over the internet without an eavesdropper from reading, or learning any information about, the contents of the messages.
 Encryption is also used to obfuscate data on a laptop or iPhone, such as in the recent case between the FBI and Apple, but I believe that it will simplify our reasoning if we leave that situation to another day.
 
 \subsubsection{Private Room, Private Converstation}
 If we are alone in a private room with another party, do we have the right to communicate privately - that is, do we have a right to \textit{not} be eavesdropped on?
 To avoid annoying criticisms, let us further assume that we are in a private residence, talking in a soundproof room, and the conversors have received no indication that someone might be listening to our conversation.
-In this case, it seems reasonable to expect a private conversation; I will operate under this assumption going forward.
-However, the internet is not a private room with only two parties but a crowded space.
+In this case, it seems reasonable to expect a private conversation.
+However, the internet is not a private room with only two parties; rather, it may be considered a crowded place, so this hypothetical situation lacks a strong parellel to actual usage of encryption.
 
 
 \subsubsection{Private Room, Crowded Conversation}
 
 We now expand the hypothetical situation to be more similar to encryption.
 Instead suppose that we are in a private residence in a crowded room. 
-One party stands on one side of the room, and the other party stands on the other side.
-The parties wish to communicate without others in the room from listening.
-The parties can achieve this using public-key encryption: each party can do some math, shout at each other, let everyone listen to their shouts, and in the end communicate some message that everyone else is oblivious to.
+I stand on one side of the room, and the other conversor stands on the other side.
+We wish to communicate without others in the room from listening.
 
 The question now is, do we have a right to have a private conversation in this room despite the fact that there are others in the room listening?
 The answer to this question is less clear to me than the private-room-private-conversation question.
 For instance, it seems weird that we expect to have a private conversation in such a situation: why would we not move to a different room to talk privately?
-On the other hand, if we assume that room is public and  we don't have access to a private room, then if we want to have a private conversation, we are required to use public-key encryption.
-This situation is much more similar to using encryption over the internet: the internet is accessible to the public, so in order to converse privately over the internet, we are required to use public-key encryption.
+On the other hand, if we assume that room is public and we don't have access to a private room, then we need to section of a portion of the room for our private use.
+This would inconvience others in the room, only for the sake of our private conversation.
+In some situations, if our private conversation is critical for the people in the room, then it is justified for us to inconvenience the others, but in general, it does not seem justified.
+It does not seem that we necessarily have a right to a private conversation; the right to the private conversation is situational.
 
 \subsubsection{Mail}
 
@@ -92,8 +93,8 @@ Therefore, the only way to communicate privately with you is to use some form of
 
 The matter is complicated by the fact that we don't \textit{own} the internet; the internet is run by private firms and the government, and they let us use it (for a price or taxes). 
 This makes communicating over the internet similar to communicating via the United States Post Service USPS.
-I give my letter to the USPS and a desired destination, the USPS does internal work to get the letter to the destination, and you eventually receive the letter.
-In this framing, it feels like the USPS is doing me a favor; they are doing the hard word and heavy lifting, and I am using their convenient service.
+I give my letter to the USPS and tell them a desired destination, the USPS does internal work to get the letter to the destination, and you eventually receive the letter.
+In this framing, the USPS is doing the hard word and heavy lifting, and I am using their convenient service.
 
 We naturally ask the question, do we have a right to privacy when we send a letter using the postal service?
 Does the postal service have the right to open up my letter and read it?
@@ -101,13 +102,10 @@ I believe - but may be wrong - that most people feel that the USPS should not be
 My letter is private, and I am paying them for their communication services, so they should communicate my letter without meddling.
 
 If the USPS does have the right to read letters, do I have a right to encrypt the contents my letter?
-Probably, but if the justification for reading letters appeals to national security, then I may not have the same right to encryption.
-National security effort need to be able to read my letter if it's bad, so I don't have a right to encrypt it.
-This line of reasoning returns to the slogan, ``you have nothing to worry about if you have nothing to hide.''
+Probably, but if the justification for reading letters is strong (e.g., it appeals to national security), then I may not have the same right to encryption.
 
 Another way to think about the USPS reading letters is to think about the question using business ethics.
-First, I formalize the proble.
-Suppose the USPS were a private company that performs a service $S$.
+Suppose that the USPS is an organization  that performs a service $S$.
 Service $S$ takes as input $x$, outputs $S(x)$.
 In the process of performing $S$, the USPS does not need to know anything about $x$.
 In fact, I put $x$ into an envelope or letter, call this $l(x)$.
